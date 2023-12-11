@@ -18,5 +18,5 @@ console.log("Task2");
 
 // Event queue -> Event loop(Main Thread) -> DB/API -> Thread Pool (Node JS Runtime)
 
-// Libuv - Asynchronous I/O made simple.
+// Libuv - Asynchronous I/O made simple. (NodeJS library)
 // libuv is a multi-platform support library with a focus on asynchronous I/O.
