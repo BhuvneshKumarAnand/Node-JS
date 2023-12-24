@@ -8,4 +8,15 @@ try {
     console.log(error);
 }
 
+// Append the data -  Add the data to existing file
+
+fs.appendFileSync('employee.txt', "Name: Jatin, Age: 22");
+
+//Deleting a file
+
+try {
+    fs.unlinkSync('employee.txt')
+} catch (error) {
+    console.log(error);
+}
 console.log('This is another operation being performed');
