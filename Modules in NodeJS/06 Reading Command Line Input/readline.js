@@ -16,8 +16,10 @@ const interface = readline.createInterface({
     output: process.stdout,
 });
 
+
+// reading values
 interface.question('Enter first number ', (num1) => {
-    interface.question('Enter 2nd number ', (num2) => {
+    interface.question('Enter 2nd number ', (num2) => { // Here num1 and num2 are strings by default
         console.log(Number(num1) + Number(num2));
     })
 })
