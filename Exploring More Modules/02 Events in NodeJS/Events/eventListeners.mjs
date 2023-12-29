@@ -9,7 +9,7 @@ function saveToDatabase() {
     console.log("Saving Post to database");
 }
 
-function sendNotification() {
+function sendNotifications() {
     console.log("sending notifications");
 }
 
@@ -18,7 +18,7 @@ function updateTimeline() {
 }
 
 userEvent.addListener("postCreated", saveToDatabase)
-userEvent.addListener("postCreated", sendNotification)
+userEvent.addListener("postCreated", sendNotifications)
 userEvent.addListener("postCreated", updateTimeline)
 
 userEvent.createPost("This is my first post");
